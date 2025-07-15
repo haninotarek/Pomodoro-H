@@ -1,0 +1,80 @@
+{
+    "appName": "Pomodoro App",
+    "description": "تطبيق بومودورو مع مؤقت دائري، تخصيصات للخطوط والألوان، ووضع الليل/النهار.",
+    "settings": {
+        "defaultTimes": {
+            "pomodoro": 25,
+            "shortBreak": 5,
+            "longBreak": 15
+        },
+        "fonts": [
+            {
+                "name": "Kumbh Sans",
+                "class": "font-kumbh",
+                "default": true
+            },
+            {
+                "name": "Roboto Slab",
+                "class": "font-roboto",
+                "default": false
+            },
+            {
+                "name": "Space Mono",
+                "class": "font-space",
+                "default": false
+            }
+        ],
+        "colors": [
+            {
+                "name": "Red-Orange",
+                "hex": "#F87070",
+                "default": true
+            },
+            {
+                "name": "Cyan",
+                "hex": "#70F3F8",
+                "default": false
+            },
+            {
+                "name": "Purple",
+                "hex": "#D881F8",
+                "default": false
+            }
+        ],
+        "darkModeEnabled": true
+    },
+    "modes": [
+        {
+            "id": "pomodoro",
+            "displayName": "بومودورو",
+            "durationKey": "pomodoro"
+        },
+        {
+            "id": "shortBreak",
+            "displayName": "استراحة قصيرة",
+            "durationKey": "shortBreak"
+        },
+        {
+            "id": "longBreak",
+            "displayName": "استراحة طويلة",
+            "durationKey": "longBreak"
+        }
+    ],
+    "features": [
+        "Circular Progress Bar",
+        "Real-time Timer",
+        "Customizable Times (Pomodoro, Short Break, Long Break)",
+        "Customizable Fonts",
+        "Customizable Accent Colors",
+        "Dark and Light Mode Toggle",
+        "Persistence of Settings (via localStorage or Firestore if configured)"
+    ],
+    "apiIntegration": "Firebase Firestore (optional, for persistent user settings across devices)",
+    "uiElements": {
+        "timerDisplay": "MM:SS format",
+        "playPauseButton": "Toggle between 'Start', 'Pause', 'Resume'",
+        "modeSelectionButtons": "Pomodoro, Short Break, Long Break",
+        "settingsIcon": "Gear icon to open settings modal",
+        "darkModeToggle": "Switch for dark/light theme"
+    }
+}
